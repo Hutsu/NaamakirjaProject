@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    title= 'Welcome to Naamakirja' + title
+    link(rel='stylesheet', href='start/style.css')
+    style
+      include ../start/post.css
+      
+    h1= "Aleksin Naamakirja"
+    
+    <div class=container>
+          <h2 id=title1> Welcome to Naamakirja
+          <h2>
+          <h2 id= title2> #{title}
+          <h2>
+          
+
+          <h5 id= leftTitle> Log out
+              form(method='POST' action='/posts/logout')
+                button.btn.btn-primary(type='submit') Log Out
+          <h5>
+          <div>
+    <div>
+  - var page = 'feed';
+  <div class=container2>
+    h6 Submit New Post
+      form(method='POST' action='/posts/create')
+                div.form-group
+                  input#content.form-control(type='text', placeholder='Post text' name='content')
+                button.btn.btn-primary(type='submit') Submit new post
+        
+    
+    <div id=line> <div>
+        h4 Posts:
+        <div id=line> <div>
+        - var counter = 0
+        each x in post_list.reverse()
+          
+              - if (x.personLoggedIn != title)
+                - counter++
+                <h4 id=time> #{x.date}
+                <div id=emptyline> <div>
+                h4 #{x.loggedIn}:
+                ul #{x.post}
+                
+                
+                  
+                <div id=line> <div>
+        - if (counter === 0)
+          ul There are no posts yet.
+  <div>

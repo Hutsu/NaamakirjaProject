@@ -1,2 +1,0 @@
-# NaamakirjaProject
-Created with CodeSandbox

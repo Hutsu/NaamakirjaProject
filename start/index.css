@@ -1,0 +1,74 @@
+body {
+  height: 1000px;
+  background-image: linear-gradient(
+    to right,
+    rgba(66, 255, 97, 0.904),
+    rgba(231, 234, 238, 0.247)
+  );
+}
+
+.container {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  text-align: center;
+  align-self: center;
+  background-color: white;
+  left: 35%;
+  top: 20%;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
+h5 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 10px;
+  color: green;
+}
+
+h4 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 10px;
+  color: red;
+}
+
+h3,
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 30px;
+}
+
+button {
+  font-family: "Courier New", Courier, monospace;
+  align-self: center;
+  text-align: center;
+  font-size: 14px;
+  height: 22px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  height: 22px;
+}
+
+label {
+  font-family: "Courier New", Courier, monospace;
+}
+
+input {
+  font-family: "Courier New", Courier, monospace;
+  align-self: center;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid black;
+  height: 22px;
+}
