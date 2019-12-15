@@ -1,6 +1,6 @@
 {
-  "name": "Aleksin Naamakirja",
-  "version": "0.0.0",
+  "name": "aleksinnaamakirja",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "nodemon ./start/www.js"
