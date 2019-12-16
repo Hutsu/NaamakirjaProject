@@ -5,13 +5,9 @@ var router = express.Router();
 var MongoClient = require("mongodb").MongoClient;
 const { sanitizeBody } = require("express-validator");
 
-///////////////////////////////////////////////
-
 var MongoClient = require("mongodb").MongoClient;
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-
-///////////////////////////////////////////////
 
 var url =
   "mongodb+srv://hutsu:Twopoints123@hutsundb-cezac.mongodb.net/test?retryWrites=true&w=majority";
@@ -29,8 +25,6 @@ mongoose.connection
     console.log("Connection Error", error);
   });
 
-///////////////////////////////////////////////
-
 //Creating schemas for DB
 
 var postDB = new mongoose.Schema({
@@ -45,14 +39,10 @@ var userDB = new mongoose.Schema({
   password: String
 });
 
-///////////////////////////////////////////////
-
 //Making schemas easier to access with variables
 
 var post = mongoose.model("Post", postDB);
 var user = mongoose.model("User", userDB);
-
-///////////////////////////////////////////////
 
 // Normal view on "posts"
 
@@ -66,8 +56,6 @@ router.get("/", function(req, res, next) {
     });
   });
 });
-
-///////////////////////////////////////////////
 
 // Creating new post in posts view
 
@@ -126,8 +114,6 @@ router.post(
   }
 );
 
-///////////////////////////////////////////////
-
 // Logging in and checking correct password
 
 var userName = "";
@@ -171,14 +157,11 @@ router.post(
   }
 );
 
-///////////////////////////////////////////////
-
 // Log out (going back to index view)
 
 router.post("/logout", function(req, res, next) {
   res.render("index", { title: "Aleksin Naamakirja" });
 });
-///////////////////////////////////////////////
 
 //Creating new account to DB
 
@@ -219,7 +202,5 @@ router.post(
     }
   }
 );
-
-///////////////////////////////////////////////
 
 module.exports = router;

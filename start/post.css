@@ -6,16 +6,6 @@ body {
     rgba(66, 255, 97, 0.904)
   );
 }
-.container3 {
-  width: 250px;
-  height: 600px;
-  background-color: white;
-  left: 100%;
-  top: 0%;
-  margin-left: 30px;
-  border-radius: 6px;
-  position: absolute;
-}
 
 .container2 {
   width: 525px;
@@ -50,29 +40,6 @@ body {
   position: absolute;
 }
 
-#msg {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
-  color: red;
-  margin-left: 5px;
-}
-
-#msg_f {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
-  color: red;
-  margin-left: 5px;
-  text-align: center;
-}
-
-#msg_f_y {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10px;
-  color: black;
-  margin-left: 5px;
-  text-align: center;
-}
-
 #emptyline {
   position: absolute;
   width: 500px;
@@ -80,30 +47,6 @@ body {
   background-color: white;
   margin-bottom: 5px;
   margin-top: 5px;
-}
-
-#line2 {
-  width: 500px;
-  height: 2px;
-  background-color: rgb(0, 0, 0);
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-  font-size: 50px;
-  color: black;
-}
-
-h4,
-h3 {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
-  margin-left: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: black;
 }
 
 #name {
@@ -118,13 +61,6 @@ h3 {
   font-size: 10px;
 }
 
-#ctime {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  top: 10%;
-  font-size: 8px;
-}
-
 #leftTitle {
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
@@ -132,31 +68,6 @@ h3 {
   margin-bottom: 20px;
   color: black;
   top: 30%;
-}
-
-#centerTitle {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: black;
-  top: 30%;
-}
-
-#friendTitle {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: black;
-  top: 30%;
-}
-
-li {
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-  font-size: 10px;
-  color: red;
 }
 
 #title1 {
@@ -180,12 +91,36 @@ li {
   color: black;
 }
 
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
+h4,
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+
 h6 {
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
   margin-left: 5px;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+li {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 10px;
+  color: red;
 }
 
 ul {
@@ -195,50 +130,16 @@ ul {
   font-size: 15px;
 }
 
-#newFriend {
-  font-family: "Courier New", Courier, monospace;
-  font-weight: Bold;
-  font-size: 15px;
-  text-align: center;
-}
-
-button[type="submits"] {
-  font-family: "Courier New", Courier, monospace;
-  align-self: center;
-  text-align: center;
-  font-size: 14px;
-  height: 22px;
-  width: 100px;
-  background-color: black;
-  color: white;
-  border-radius: 4px;
-  height: 22px;
-}
-
-button[type="submitf"] {
-  font-family: "Courier New", Courier, monospace;
-  align-self: center;
-  text-align: center;
-  font-size: 14px;
-  height: 22px;
-  width: 150px;
-  background-color: black;
-  color: white;
-  border-radius: 4px;
-  height: 22px;
-}
-
 button {
   font-family: "Courier New", Courier, monospace;
   align-self: center;
   text-align: center;
-  font-size: 14px;
-  height: 22px;
-  width: 100px;
+  font-size: 15px;
+  height: 23px;
+  width: 90px;
   background-color: black;
   color: white;
   border-radius: 4px;
-  height: 22px;
 }
 
 p {
@@ -253,40 +154,11 @@ label {
   color: solid black;
 }
 
-input[type="text"] {
+input {
   font-family: "Courier New", Courier, monospace;
   align-self: center;
-  width: 19%;
+  width: 90%;
   border: none;
   border-bottom: 2px solid black;
   height: 22px;
-  margin-left: 5px;
-}
-
-input[type="name"] {
-  font-family: "Courier New", Courier, monospace;
-  align-self: center;
-  width: 50%;
-  border: none;
-  border-bottom: 2px solid black;
-  height: 22px;
-  margin-left: 5px;
-}
-
-input[type="text"] {
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-input[type="text"]:focus {
-  width: 480px;
-}
-
-input[type="name"] {
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-input[type="name"]:focus {
-  width: 180px;
 }
